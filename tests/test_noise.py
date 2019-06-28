@@ -1,10 +1,11 @@
 from .context import census_dp
-# from census_dp import laplace_mech
+from census_dp import noise
 import pytest
 
 
-def test_laplace():
+def test_laplace_mech():
     total = 0
     for i in range(1000):
-        total += census_dp.laplace_mech(x=0, budget=2, sensitivity=1)
-    print(total/1000.0)
+        total += noise.laplace_mech(mu=0, epsilon=2, sensitivity=1)
+    k = total/1000.0
+    assert(round(k, 1) == 0)
