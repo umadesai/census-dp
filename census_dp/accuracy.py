@@ -1,11 +1,22 @@
+"""
+Accuracy measuring algorithms
+"""
 import numpy as np
-import matplotlib.pyplot as plt
+from noise import laplace_mech
 
 
-def mse(true_answer, function_name, *params):
-    """true_answer is either a scalar or numpy array"""
-    niterations = 100_000
-    return sum(np.sum((true_answer - function_name(*params))**2) for x in range(niterations)) / float(niterations)
+def mse(mu, algo, *params):
+    """Runs the algorithm on the data over n iterations
+    and computes the mean squared error.
+
+    Args:
+      mu (float or numpy array): the true answer
+      algo (function): algorithm to run on the data
+      *params: algo function params
+    """
+    n = 100_000
+    return sum(np.sum((mu - algo(*params))**2)
+               for x in range(n)) / float(n)
 
 
 def avg_l1_laplace(epsilon, mu, n=1000):
@@ -22,8 +33,3 @@ def avg_l1_laplace(epsilon, mu, n=1000):
         accuracy = 1 - (np.linalg.norm(noisy_arr-mu, 1)/(2*noisy_arr.shape[1]))
         total += accuracy
     return total/n
-
-
-def plot_roc(accuracy_df):
-    accuracy_df.plot.scatter('episolon', 'accuracy')
-    plt.show()

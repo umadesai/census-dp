@@ -1,8 +1,13 @@
+"""
+Noise injection algorithms
+"""
+
 import numpy as np
 
 
 def laplace_mech(mu, epsilon, sensitivity=1.0):
-    """Implementation of the Laplace Mechanism that adds Laplacian-distributed noise to a function.
+    """Implementation of the Laplace Mechanism that adds
+    Laplacian-distributed noise to a function.
 　
     Args:
       mu (float or numpy array): the true answer
@@ -17,20 +22,18 @@ def laplace_mech(mu, epsilon, sensitivity=1.0):
     return mu + z
 
 
-def geometric_mechanism(true_answer, budget, sensitivity, prng):
-    """ Implementation of the Geometric Mechanism
-  　
+def geometric_mech(mu, budget, sensitivity=1.0, prng=np.random):
+    """Implementation of the Geometric Mechanism
+　
     Args:
-      true_answer (float or numpy array): the true answer
+      mu (float or numpy array): the true answer
       budget (float): the privacy budget to use
-      sensitivity (int): the sensitivity of the query
-      addition or deletion of one person from the database
-      must change the query answer vector by an integer amount
+      sensitivity (float): the global sensitivity of the query
       prng: a numpy random number generator
     """
-    shape = np.shape(true_answer)
-    epsilon = budget / float(sensitivity)
+    shape = np.shape(mu)
+    epsilon = budget/float(sensitivity)
     p = 1 - np.exp(-epsilon)
     x = prng.geometric(p, size=shape) - 1
     y = prng.geometric(p, size=shape) - 1
-    return x-y + true_answer
+    return x-y + mu
