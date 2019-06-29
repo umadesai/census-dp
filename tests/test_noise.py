@@ -6,7 +6,7 @@ import pytest
 @pytest.mark.parametrize("mu, epsilon, sensitivity, res", [
     (0, 2, 1, 0),
     (1, 4, 1, 1),
-    (2, 1, 1, 2),
+    (2, 3, 1, 2),
     (3, 5, 1, 3),
 ])
 def test_laplace_mech(mu, epsilon, sensitivity, res):
@@ -20,7 +20,7 @@ def test_laplace_mech(mu, epsilon, sensitivity, res):
 @pytest.mark.parametrize("mu, budget, res", [
     (0, 2, 0),
     (1, 4, 1),
-    (2, 1, 2),
+    (2, 5, 2),
     (3, 3, 3),
 ])
 def test_geometric_mech(mu, budget, res):
