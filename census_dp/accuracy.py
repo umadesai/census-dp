@@ -15,8 +15,7 @@ def mse(mu, algo, *params):
       *params: algo function params
     """
     n = 100_000
-    return sum(np.sum((mu - algo(*params))**2)
-               for x in range(n)) / float(n)
+    return sum(np.sum((mu - algo(*params))**2) for x in range(n)) / float(n)
 
 
 def avg_l1_laplace(epsilon, mu, n=1000):
