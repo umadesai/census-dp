@@ -1,4 +1,4 @@
-# census-dp
+# Disclosure Avoidance Repository
 
 WIP. Algorithms are not formally private.
 
@@ -37,3 +37,18 @@ This command should launch Jupyter Notebook locally in your browser. If it does 
 8. Click on the IPython Notebook you would like to open.
 
 9. Reference [this sheet](https://s3.amazonaws.com/assets.datacamp.com/blog_assets/Jupyter_Notebook_Cheat_Sheet.pdf) for help using Jupyter Notebook.
+
+### Setting up your conda environment.
+
+1. Create the environment from the ```env.yml``` file:
+```
+conda env create -f env.yml
+```
+2. Activate the new environment:
+```
+conda activate env
+```
+3. Once you've finished your work in this environment, you can deactivate the environment using:
+```
+conda deactivate
+```
