@@ -52,3 +52,17 @@ conda activate env
 ```
 conda deactivate
 ```
+### Importing a module from the library.
+
+If you want to use a module or algorithm from the library in your own python script, you can follow the structure of the example below.
+```
+from census_dp import laplace
+
+my_laplace = laplace.laplace_mech(mu=0, epsilon=1, sensitivity=1)
+```
+### Running tests.
+
+There are tests for each of the library modules, implemented with pytest. To run all the tests at once, run pytest from the base directory of the project.
+```
+pytest
+```
