@@ -3,7 +3,9 @@ from typing import Union
 
 
 def geometric_mech(mu: Union[float, np.ndarray], epsilon: int, sensitivity: float = 1.0):
-    """Implementation of the Geometric Mechanism
+    """Implementation of the Geometric Mechanism. The Geometric Mechanism is a
+    discrete variant of the Laplace Mechanism. It is useful when integer-valued
+    output is desired.
 
     Args:
       mu (float or numpy array): the true answer
