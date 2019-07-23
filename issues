@@ -1,0 +1,24 @@
+This file serves as a list of things to edit, add, or remove -- to generally use as a dialogue. It is meant to be amended as we go. 
+
+dp-count
+  - A few typos in text before In[3] 
+  - Consider explicitly using "global sensitivity" to intoduce this concept in the text before In[5], so it's not confused with 
+    local sensivity
+      - You could start with "Generally, the global sensitivity of a function is...". Then state that you will refer to it as
+        'sensitivity' from that point on
+dp-mean
+  - Perhaps explain in the preceeding text that the function avg_l1_mean is calculated from several runs of the dp_mean function
+dp-median
+  - We can flesh out how to present smooth sesitivity. I like that there is already a skeleton outline here
+dp-budget
+  - Composition Theorem: May want to state "When two answers are returned to an adversary, the total privacy loss can be twice
+    as large..." I don't think there is no mention of serial vs. parallel composition up to this point, so may be good to hedge
+    until those concepts are explianed later
+dp-future
+  - Should bullet 2 read "... due to non-strictly-monotonic behavior..."?
+dp-regression
+  - It looks like we need an accuracy measure for each micro-data-set before the counts are postprocessed, correct?
+  - After the ROC curve is presented, it would be nice to explicitly show what each method does to the regression
+    coefficient(s)
+  
+
