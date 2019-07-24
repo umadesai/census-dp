@@ -4,8 +4,7 @@ from typing import Union
 
 def laplace_mech(mu: Union[float, np.ndarray], epsilon: int, sensitivity: float = 1.0):
     """
-    Implementation of the Laplace Mechanism that adds
-    Laplacian-distributed noise to a function.
+    Implementation of the Laplace Mechanism
 
     Args:
       mu (float or numpy array): the true answer
