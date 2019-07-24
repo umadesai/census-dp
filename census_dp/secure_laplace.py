@@ -3,7 +3,7 @@ import math
 import numpy as np
 
 
-def secure_laplace(scale, length):
+def secure_laplace_mech(scale):
     """
     Implementation of laplace mechanism using a CSPRNG from the secrets library.
     Secrets should be used in preference to the default pseudo-random number
@@ -16,10 +16,3 @@ def secure_laplace(scale, length):
     # inverse CDF transform (with a small trick): uniform -> laplace
     laplace_rns = np.sign(uniform_rns - 0.5) * scale * math.log(1. - 2. * abs(uniform_rns - 0.5))
     return laplace_rns
-
-
-if __name__ == "__main__":
-    privacy_budget = 0.1
-    query_sensitivity = 1
-    secure_laplace_rvs = secure_laplace(query_sensitivity/privacy_budget, 10000)
-    print(secure_laplace_rvs)
