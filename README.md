@@ -1,7 +1,5 @@
 # Disclosure Avoidance Repository
 
-WIP. Algorithms are not formally private.
-
 ### How to install & run a notebook.
 
 1. Install Anaconda (Census employees must submit a Remedy ticket).
