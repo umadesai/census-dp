@@ -32,7 +32,7 @@ jupyter notebook
 ```
 This command should launch Jupyter Notebook locally in your browser. If it does not, open your browser and navigate to the localhost address that is provided in your Anaconda prompt.
 
-8. Click on the IPython Notebook you would like to open.
+8. Click on the IPython Notebook you would like to open. We recommend starting with [dp-intro](https://github.com/umadesai/census-dp/blob/master/notebooks/dp-intro.ipynb).
 
 9. Reference [this sheet](https://s3.amazonaws.com/assets.datacamp.com/blog_assets/Jupyter_Notebook_Cheat_Sheet.pdf) for help using Jupyter Notebook.
 
