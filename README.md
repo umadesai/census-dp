@@ -7,7 +7,7 @@ External researchers using restricted census data at Federal Statistical Researc
 
 #### Differential Privacy
 - mathematically provable privacy guarantee
-- states that any information-related risk to a person should not change signicantly as a result of that person's information being indcluded, or not, in the analysis
+- states that any information-related risk to a person should not change significantly as a result of that person's information being included, or not, in the analysis
 
    ##### [A Privacy "Budget"](https://github.com/umadesai/census-dp/blob/master/notebooks/dp-budget.ipynb)
    - DP provides provable privacy guarantees with respect to the cumulative risk from successive data releases
@@ -15,7 +15,6 @@ External researchers using restricted census data at Federal Statistical Researc
 
    ##### Differentially Private Computations
    Algorithms maintain differential privacy via the introduction of carefully crafted random noise into the computation. 
-
    Types of computations that can be made differentiallly private:
    - descriptive statistics
        - [counts](https://github.com/umadesai/census-dp/blob/master/notebooks/dp-count.ipynb)
