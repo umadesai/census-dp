@@ -6,8 +6,8 @@ The Census Bureau is by law required to keep its survey responses confidential, 
 External researchers using restricted census data at Federal Statistical Research Data Centers (FSRDCs) are among the first affected by these policies, but all census data products will eventually require these techniques. Researchers generally do not have a background in formal privacy, so they face a road block if they are interested in publishing sub-state results. This repository strives to deliver the tools and documentation to address this problem. *Content here is WIP and all releases utilizing this library still require official approval from the DRB.*
 
 #### Differential Privacy
-- mathematically provable privacy guarantee
-- states that any information-related risk to a person should not change significantly as a result of that person's information being included, or not, in the analysis
+   - mathematically provable privacy guarantee
+   - states that any information-related risk to a person should not change significantly as a result of that person's information being included, or not, in the analysis
 
    ##### [A Privacy "Budget"](https://github.com/umadesai/census-dp/blob/master/notebooks/dp-budget.ipynb)
    - DP provides provable privacy guarantees with respect to the cumulative risk from successive data releases
