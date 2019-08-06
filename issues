@@ -19,5 +19,7 @@ dp-regression
   - It looks like we need an accuracy measure for each micro-data-set before the counts are postprocessed, correct?
   - After the ROC curve is presented, it would be nice to explicitly show what each method does to the regression
     coefficient(s)
+  - The logistic regression example is looking good. Is the intent with the RR mechanism to bin the predictors before applying
+    mechanism?
   
 
