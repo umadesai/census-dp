@@ -111,6 +111,8 @@ This project is the work of members of the CED-Disclosure Avoidance team at the 
 - Caleb Floyd ([calebfloyd](https://github.com/calebfloyd))
 - Michael Freiman ([mfreiman](https://github.com/mfreiman))
 
+Hear more about the repository at the [Annual Conference of the Federal Statistical Research Data Centers](https://rdc.wisc.edu/2019-fsrdc/) on September 5, 2019 at the Pyle Center, University of Wisconsin–Madison.
+
 ## Acknowledgements
 
 Thank you to the incredible contributions of those who have been researching differential privacy at the Census Bureau and academic institutions, specifically:
