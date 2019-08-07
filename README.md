@@ -20,12 +20,12 @@ Types of computations that can be made differentiallly private:
     - classification
 - generation of synthetic data
 
-   #### Read more
-   - [Differential Privacy: An Introduction For Statistical Agencies](https://gss.civilservice.gov.uk/wp-content/uploads/2018/12/12-12-18_FINAL_Privitar_Kobbi_Nissim_article.pdf) Page et al.
-   - [Differential Privacy: A Primer for a Non-technical Audience](http://www.jetlaw.org/wp-content/uploads/2018/12/4_Wood_Final.pdf) Wood et al.
-   - [A Firm Foundation for Private Data Analysis](http://delivery.acm.org/10.1145/1870000/1866758/p86-dwork.pdf?ip=108.28.104.96&id=1866758&acc=OPEN&key=4D4702B0C3E38B35%2E4D4702B0C3E38B35%2E4D4702B0C3E38B35%2E6D218144511F3437&__acm__=1562937387_c049c03e734df8e04aac19ab857b3961) Dwork.
-   - [The Algorithmic Foundations of Differential Privacy](https://www.cis.upenn.edu/~aaroth/Papers/privacybook.pdf) Dwork & Roth.
-   - [Introductory Readings in Formal Privacy for Economists](https://labordynamicsinstitute.github.io/privacy-bibliography/index.html) Abowd, Schmutte, Sexton, & Vilhuber.
+#### Read more
+- [Differential Privacy: An Introduction For Statistical Agencies](https://gss.civilservice.gov.uk/wp-content/uploads/2018/12/12-12-18_FINAL_Privitar_Kobbi_Nissim_article.pdf) Page et al.
+- [Differential Privacy: A Primer for a Non-technical Audience](http://www.jetlaw.org/wp-content/uploads/2018/12/4_Wood_Final.pdf) Wood et al.
+- [A Firm Foundation for Private Data Analysis](http://delivery.acm.org/10.1145/1870000/1866758/p86-dwork.pdf?ip=108.28.104.96&id=1866758&acc=OPEN&key=4D4702B0C3E38B35%2E4D4702B0C3E38B35%2E4D4702B0C3E38B35%2E6D218144511F3437&__acm__=1562937387_c049c03e734df8e04aac19ab857b3961) Dwork.
+- [The Algorithmic Foundations of Differential Privacy](https://www.cis.upenn.edu/~aaroth/Papers/privacybook.pdf) Dwork & Roth.
+- [Introductory Readings in Formal Privacy for Economists](https://labordynamicsinstitute.github.io/privacy-bibliography/index.html) Abowd, Schmutte, Sexton, & Vilhuber.
    
 ## Getting started
 
@@ -115,6 +115,7 @@ This project is the work of members of the CED-Disclosure Avoidance team at the 
 
 Thank you to the incredible contributions of those who have been researching differential privacy at the Census Bureau and academic institutions, specifically:
 - Philip Leclerc, US Census Bureau
+- Simson Garfinkel, US Census Bureau
 - John Abowd, US Census Bureau
 - Ashwin Machanavajjhala, Duke University
 - Michael Hay, Colgate University
